@@ -190,14 +190,14 @@
 				<div class="contact-title">
 					<h2>Contact Us</h2>
 				</div>
-				<form class="contact-form" action="/" method="GET">
+				<form class="contact-form" id="contact_form">
 					<div class="form-group">
 						<input type="text" placeholder="full name" class="form-control" autocomplete="off" id="full-name">
-						<input type="email" id="mail" placeholder="email-address" class="form-control" autocomplete="off">
+						<input type="email" id="email" placeholder="email-address" class="form-control" autocomplete="off">
 					</div>
 					<input type="text" placeholder="Subject" class="form-control" autocomplete="off" id="khana">
-					<textarea rows="5" class="form-control" placeholder="Your Experience at khana-khazana"></textarea>
-					<button type="submit" class="btn">Send Message</button>
+					<textarea rows="5" id="experience_box" class="form-control" placeholder="Your Experience at khana-khazana"></textarea>
+					<button type="button" onclick="submitHandler()" class="btn">Send Message</button>
 				</form>
 			</div>
 		</div>
@@ -241,17 +241,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<!-------------- SLICK------------------->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
-	<script type="text/javascript">
-		$('.fade').slick({
-  dots: true,
-  infinite: true,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear',
-  autoplay: true,
-  autoplaySpeed: 1000,
-  arrow: true,
-});
-	</script>
+	
+	<script src='./javascript.js' type="text/javascript"></script>
 </body>
 </html>
