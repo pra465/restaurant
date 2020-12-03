@@ -350,14 +350,27 @@ footer{
     .chef{
         overflow-x: auto;
     }
+    .chef-wrapper{
+        margin: 0;
+    }
     .food > div{
         grid-template-columns: repeat(1,1fr);
     }
+    .food > div > div{
+        width: 100vw;
+        text-align: center;
+    }
+    
     .client-title,.client{
         display: none;
     }
     .contact-container{
         grid-template-columns: repeat(1,1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .nav-foo ul li {
+        margin: 5px;
     }
       
 }
