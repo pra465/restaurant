@@ -332,11 +332,18 @@ footer{
 }
 
 
-@media only screen and (max-width: 600px) {
-    
+@media only screen and (max-width: 1000px) {
+    html{
+      max-width:100vw;	
+    }
+    .header>nav,.header>video{
+        display: none;
+    } 	
     .header > h1 {
-      font-size: 10px;
-      top: 20px;
+      color: black;
+      font-size: 60px;
+      text-align: center;
+      position: unset;
     }
     .header > .welcome {
         top: 10px;
@@ -372,5 +379,7 @@ footer{
     .nav-foo ul li {
         margin: 5px;
     }
-      
+    .foo{
+        display: none;
+    }     
 }
